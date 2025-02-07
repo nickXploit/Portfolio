@@ -12,8 +12,9 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow pt-20 px-4 md:px-8 lg:px-16 min-h-[calc(100vh-80px)]">
-        <div className="max-w-7xl mx-auto">
+
+      <main className="flex-grow pt-20 min-h-[calc(100vh-80px)]">
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
