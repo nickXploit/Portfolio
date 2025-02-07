@@ -79,7 +79,7 @@ const Projects = () => {
       : projects.filter((project) => project.category === filter);
 
   return (
-    <div className="min-h-screen bg-[#0A192F] text-[#8892B0] py-16">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-gray-200 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <motion.div

@@ -29,9 +29,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="relative w-full min-h-screen flex items-center bg-[#0A192F] text-[#8892B0]">
+    <div className="relative w-full min-h-screen flex items-center bg-gradient-to-br from-gray-900 to-black text-gray-200">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-[#0A192F] opacity-90 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black text-gray-200 z-10"></div>
 
       {/* Hero Content */}
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

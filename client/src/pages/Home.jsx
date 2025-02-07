@@ -52,7 +52,7 @@ const Home = () => {
       <HeroSection />
 
       {/* Expertise Section */}
-      <div className="w-full py-16 bg-[#112240]">
+      <div className="w-full py-16 bg-gradient-to-br from-black to-gray-900 text-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={containerVariants}
@@ -79,7 +79,7 @@ const Home = () => {
       </div>
 
       {/* About Preview */}
-      <div className="w-full py-16 bg-[#0A192F]">
+      <div className="w-full py-16 bg-gradient-to-br from-gray-900 to-black text-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}

@@ -105,7 +105,7 @@ const Skills = () => {
       : skills.filter((skill) => skill.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-[#0A192F] text-[#8892B0] py-16">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-gray-200 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
         <motion.div
@@ -116,7 +116,7 @@ const Skills = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#33FF33]">
             Technical Skills
           </h1>
-          <p className="text-xl text-[#8892B0]">
+          <p className="text-xl text-gray-400">
             Expertise in Cybersecurity, Programming, and Offensive Technologies
           </p>
         </motion.div>
@@ -190,7 +190,7 @@ const Skills = () => {
         {/* No Skills Found */}
         {filteredSkills.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-xl text-[#8892B0]">
+            <p className="text-xl text-gray-200">
               No skills found in this category.
             </p>
           </div>
