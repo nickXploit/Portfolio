@@ -7,6 +7,7 @@ import {
   FaRobot,
   FaNetworkWired,
   FaShieldVirus,
+  FaSearch,
 } from "react-icons/fa";
 import { SiEthereum } from "react-icons/si";
 
@@ -18,6 +19,7 @@ const Projects = () => {
     "AI Security",
     "Web Exploitation",
     "Offensive Security",
+    "Network Security",
   ];
 
   const projects = [
@@ -70,6 +72,16 @@ const Projects = () => {
       githubLink: "#",
       liveLink: "#",
       icon: <FaCode className="text-yellow-500" />,
+    },
+    {
+      title: "Network Scanner Tool",
+      description:
+        "Educational network scanning tool with TCP connect scanning, service identification, and basic OS fingerprinting capabilities",
+      technologies: ["Python", "Network Security", "Socket Programming"],
+      category: "Network Security",
+      githubLink: "https://github.com/nickXploit/Portfolio/tree/main/tools/network-scanner",
+      liveLink: "#",
+      icon: <FaSearch className="text-cyan-500" />,
     },
   ];
 

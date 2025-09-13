@@ -1,0 +1,25 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore test results
+test_results.json
+example_results.json
+*.log
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+.DS_Store
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Ignore environment files
+.env
+venv/
+env/
