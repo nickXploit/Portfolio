@@ -17,7 +17,7 @@ const Footer = () => {
       icon: (
         <FaGithub className="w-6 h-6 text-gray-400 hover:text-white transition-colors" />
       ),
-      href: "https://github.com/InfinityCodder",
+      href: "https://github.com/nickXploit",
       aria: "GitHub Security Repositories",
     },
     {
