@@ -20,7 +20,7 @@ const HeroSection = () => {
     },
     {
       icon: <FaGithub className="w-6 h-6 text-gray-400 hover:text-white" />,
-      href: "https://github.com/InfinityCodder",
+      href: "https://github.com/nickXploit",
     },
     {
       icon: <FaTwitter className="w-6 h-6 text-blue-400 hover:text-blue-300" />,
