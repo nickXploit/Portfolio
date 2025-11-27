@@ -73,7 +73,7 @@ const Navbar = () => {
             to="/"
             className="text-2xl font-bold text-[#33FF33] hover:text-[#8892B0] transition-colors"
           >
-            Anil Tadvi
+            <img src={Logo} alt="Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
