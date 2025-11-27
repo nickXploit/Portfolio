@@ -61,28 +61,7 @@ const Certifications = () => {
         "Threats and vulnerabilities",
       ],
       verificationLink: "https://www.comptia.org/verify", // Replace with actual verification link
-    },
-{
-  title: "Certified Cybersecurity Educator Professional (CCEP)",
-  issuer: "Red Team Leaders",
-  date: "2024",
-  description:
-    "Professional credential focused on cybersecurity education, real-world offensive security training, and advanced teaching methodology.",
-  icon: <FaCertificate />,
-  status: "Completed",
-  badgeColor: "bg-purple-600",
-  details: [
-    "Cybersecurity curriculum design",
-    "Offensive security lab instruction",
-    "Advanced teaching methodology",
-  ],
-  verificationLink:
-    "https://courses.redteamleaders.com/exam-completion/2c70d277a29cc072",
-},
-
-
-
-    
+    }, 
   ];
 
   return (
