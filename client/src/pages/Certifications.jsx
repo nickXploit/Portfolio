@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -28,7 +27,7 @@ const Certifications = () => {
         "Hands-on exploit development",
         "Advanced network and web application security",
       ],
-      verificationLink: "https://www.offensive-security.com/verify", // Replace with actual verification link
+      verificationLink: "https://www.offensive-security.com/verify",
     },
     {
       title: "Certified Ethical Hacker (CEH)",
@@ -44,7 +43,7 @@ const Certifications = () => {
         "Vulnerability assessment",
         "Penetration testing techniques",
       ],
-      verificationLink: "https://www.eccouncil.org/verify", // Replace with actual verification link
+      verificationLink: "https://www.eccouncil.org/verify",
     },
     {
       title: "CompTIA Security+",
@@ -60,10 +59,10 @@ const Certifications = () => {
         "Compliance and operational security",
         "Threats and vulnerabilities",
       ],
-      verificationLink: "https://www.comptia.org/verify", // Replace with actual verification link
+      verificationLink: "https://www.comptia.org/verify",
     },
-  ];
 
+    // ✅ YOUR NEW CCEP CERTIFICATION ADDED PROPERLY
     {
       title: "Certified Cybersecurity Educator Professional (CCEP)",
       issuer: "Red Team Leaders",
@@ -81,7 +80,8 @@ const Certifications = () => {
       verificationLink:
         "https://courses.redteamleaders.com/exam-completion/2c70d277a29cc072",
     },
-  
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-gray-200 py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -145,6 +145,7 @@ const Certifications = () => {
             </motion.div>
           ))}
         </div>
+
         {/* Certification Details Modal */}
         <AnimatePresence>
           {selectedCertification && (
@@ -236,4 +237,3 @@ const Certifications = () => {
 };
 
 export default Certifications;
-Add it here also I completed this cert ok 
