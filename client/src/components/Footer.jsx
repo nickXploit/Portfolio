@@ -45,7 +45,7 @@ const Footer = () => {
       icon: (
         <SiTryhackme className="w-6 h-6 text-red-500 hover:text-red-400 transition-colors" />
       ),
-      href: "https://tryhackme.com/p/GreatestHacker",
+      href: "https://tryhackme.com/p/stackraid",
       aria: "TryHackMe Profile",
     },
   ];
