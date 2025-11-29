@@ -80,6 +80,55 @@ const Certifications = () => {
       verificationLink:
         "https://courses.redteamleaders.com/exam-completion/2c70d277a29cc072",
     },
+<div className="bg-[#0F1A2A] shadow-xl rounded-2xl p-6 hover:scale-[1.02] transition-all duration-300 border border-gray-700">
+  {/* Title + Icon */}
+  <div className="flex items-center gap-3">
+    <div className="text-green-400 text-3xl">
+      <i className="fa-solid fa-certificate"></i>
+    </div>
+    <h3 className="text-xl font-semibold text-green-400">
+      Foundations of Cybersecurity
+    </h3>
+  </div>
+
+  {/* Issuer */}
+  <p className="text-gray-300 mt-1 text-sm">Google / Coursera</p>
+
+  {/* Description */}
+  <p className="text-gray-400 mt-3 text-sm leading-relaxed">
+    Foundational cybersecurity certificate covering security ethics, attacks,
+    common tools, and analyst skills.
+  </p>
+
+  {/* What you will learn */}
+  <div className="mt-4">
+    <h4 className="text-green-400 font-semibold mb-2">What you will learn</h4>
+    <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+      <li>Recognize core skills and knowledge needed to become a cybersecurity analyst</li>
+      <li>Identify how security attacks impact business operations</li>
+      <li>Explain security ethics</li>
+      <li>Identify common tools used by cybersecurity analysts</li>
+    </ul>
+  </div>
+
+  {/* Status */}
+  <div className="mt-4">
+    <span className="px-3 py-1 text-sm rounded-full bg-green-600 text-white">
+      Completed
+    </span>
+  </div>
+
+  {/* Button */}
+  <a
+    href="https://coursera.org/share/a9182085a884e6daf4fccd1c10c138cb"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-4 bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-xl text-sm transition"
+  >
+    View Certificate
+  </a>
+</div>
+  
   ];
 
   return (
