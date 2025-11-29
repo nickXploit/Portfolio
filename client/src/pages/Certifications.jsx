@@ -9,8 +9,6 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
-import GoogleLogo from "../assets/google.svg"; // ✅ Add Google logo file
-
 const Certifications = () => {
   const [selectedCertification, setSelectedCertification] = useState(null);
 
@@ -82,20 +80,14 @@ const Certifications = () => {
         "https://courses.redteamleaders.com/exam-completion/2c70d277a29cc072",
     },
 
-    // ✅ GOOGLE + COURSERA CERTIFICATION — CLEAN & CORRECT
+    // ✅ FIXED GOOGLE / COURSERA CERT (NO LOGO)
     {
       title: "Foundations of Cybersecurity",
       issuer: "Google / Coursera",
       date: "2025",
       description:
-        "Foundational cybersecurity certificate covering security ethics, attacks, common tools, and analyst skills.",
-      icon: (
-        <img
-          src={GoogleLogo}
-          alt="Google Logo"
-          className="w-8 h-8 rounded-md"
-        />
-      ),
+        "Foundational cybersecurity certificate covering core security concepts, security ethics, common attack types, and analyst tools.",
+      icon: <FaCertificate />, // using default certificate icon
       status: "Completed",
       badgeColor: "bg-green-600",
       details: [
@@ -112,6 +104,7 @@ const Certifications = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-gray-200 py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Page Header */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -125,6 +118,7 @@ const Certifications = () => {
           </p>
         </motion.div>
 
+        {/* Certifications Layout */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {certifications.map((cert, index) => (
             <motion.div
@@ -134,12 +128,12 @@ const Certifications = () => {
               transition={{ delay: index * 0.2 }}
               onClick={() => setSelectedCertification(cert)}
               className={`group cursor-pointer bg-[#112240] rounded-lg p-6 transform hover:scale-105 transition-transform duration-300 hover:shadow-lg hover:shadow-[#33FF33]/20
-              ${
-                selectedCertification?.title === cert.title
-                  ? "ring-4 ring-green-500 bg-gray-800"
-                  : "hover:scale-105 bg-gray-900"
-              }
-            `}
+                ${
+                  selectedCertification?.title === cert.title
+                    ? "ring-4 ring-green-500 bg-gray-800"
+                    : "hover:scale-105 bg-gray-900"
+                }
+              `}
             >
               <div className="flex items-center space-x-4 mb-4">
                 <div className="text-3xl md:text-4xl text-green-500 opacity-70">
@@ -171,6 +165,7 @@ const Certifications = () => {
           ))}
         </div>
 
+        {/* Certification Details Modal */}
         <AnimatePresence>
           {selectedCertification && (
             <motion.div
@@ -186,6 +181,7 @@ const Certifications = () => {
                 className="bg-gray-800 rounded-xl max-w-2xl w-full my-8 p-6 md:p-8 relative"
                 onClick={(e) => e.stopPropagation()}
               >
+                {/* Close Button */}
                 <button
                   onClick={() => setSelectedCertification(null)}
                   className="absolute top-4 right-4 text-gray-400 hover:text-white"
@@ -210,9 +206,9 @@ const Certifications = () => {
                   </div>
                   <span
                     className={`
-                        px-4 py-2 rounded-full text-white font-bold
-                        ${selectedCertification.badgeColor}
-                      `}
+                      px-4 py-2 rounded-full text-white font-bold
+                      ${selectedCertification.badgeColor}
+                    `}
                   >
                     {selectedCertification.status}
                   </span>
